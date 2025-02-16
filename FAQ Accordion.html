@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)file:///C:/Users/HP/.vscode/cli/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-container h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .faq-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .faq-answer {
+            padding: 15px;
+            font-size: 16px;
+            color: #555;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-item">
+            <div class="faq-question">Can I cancel my subscription at anytime?</div>
+            <div class="faq-answer">Sure. Your paid subscription can be cancelled anytime by shifting to Lite plan.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Can I change my plan later on?</div>
+            <div class="faq-answer">Absolutely! You can upgrade or downgrade your plan anytime. The money paid for the previous subscription will be recalculated to the new plan.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Will you renew my subscription automatically?</div>
+            <div class="faq-answer">Yes, your subscription will be automatically renewed according to your pay period.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How many sites can I install the widgets of this app to?</div>
+            <div class="faq-answer">Widgets of our app can be installed on as many sites as you need.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">100,000 views - how much is it?</div>
+            <div class="faq-answer">The number of views equals the number of times the app loads on your website. As usual, 100,000 views approximately equals 100,000 visits to your site per month. But it still depends on each specific case and the numbers may differ. More details about views are here.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">What are widgets?</div>
+            <div class="faq-answer">Widgets are an adjusted display of the application. Every app may have multiple widgets. A widget defines how the application will look and function on your website.</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body></html>
